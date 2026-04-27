@@ -29,19 +29,23 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             dataGridView1 = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewComboBoxColumn();
+            Column4 = new DataGridViewButtonColumn();
             guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -55,6 +59,8 @@
             guna2TrackBar1 = new Guna.UI2.WinForms.Guna2TrackBar();
             guna2WinProgressIndicator1 = new Guna.UI2.WinForms.Guna2WinProgressIndicator();
             guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
+            imageList1 = new ImageList(components);
+            guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             guna2GradientPanel1.SuspendLayout();
             SuspendLayout();
@@ -62,7 +68,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column5, Column4 });
             dataGridView1.Location = new Point(373, 49);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(415, 389);
@@ -88,6 +94,20 @@
             Column3.HeaderText = "Posts";
             Column3.Name = "Column3";
             // 
+            // Column5
+            // 
+            Column5.HeaderText = "Column5";
+            Column5.Items.AddRange(new object[] { "Yes", "No" });
+            Column5.Name = "Column5";
+            // 
+            // Column4
+            // 
+            Column4.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            Column4.HeaderText = "";
+            Column4.Name = "Column4";
+            Column4.Text = "Delete";
+            Column4.Width = 21;
+            // 
             // guna2BorderlessForm1
             // 
             guna2BorderlessForm1.ContainerControl = this;
@@ -97,13 +117,13 @@
             // guna2GradientPanel1
             // 
             guna2GradientPanel1.Controls.Add(guna2CircleButton1);
-            guna2GradientPanel1.CustomizableEdges = customizableEdges19;
+            guna2GradientPanel1.CustomizableEdges = customizableEdges9;
             guna2GradientPanel1.Dock = DockStyle.Top;
             guna2GradientPanel1.FillColor = Color.DarkKhaki;
             guna2GradientPanel1.FillColor2 = Color.Ivory;
             guna2GradientPanel1.Location = new Point(0, 0);
             guna2GradientPanel1.Name = "guna2GradientPanel1";
-            guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2GradientPanel1.Size = new Size(800, 32);
             guna2GradientPanel1.TabIndex = 1;
             // 
@@ -118,7 +138,7 @@
             guna2CircleButton1.ForeColor = Color.White;
             guna2CircleButton1.Location = new Point(769, 3);
             guna2CircleButton1.Name = "guna2CircleButton1";
-            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton1.Size = new Size(28, 26);
             guna2CircleButton1.TabIndex = 0;
@@ -151,10 +171,10 @@
             guna2ToggleSwitch1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             guna2ToggleSwitch1.CheckedState.InnerBorderColor = Color.White;
             guna2ToggleSwitch1.CheckedState.InnerColor = Color.White;
-            guna2ToggleSwitch1.CustomizableEdges = customizableEdges16;
+            guna2ToggleSwitch1.CustomizableEdges = customizableEdges6;
             guna2ToggleSwitch1.Location = new Point(52, 113);
             guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
-            guna2ToggleSwitch1.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            guna2ToggleSwitch1.ShadowDecoration.CustomizableEdges = customizableEdges7;
             guna2ToggleSwitch1.Size = new Size(35, 20);
             guna2ToggleSwitch1.TabIndex = 5;
             guna2ToggleSwitch1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
@@ -164,10 +184,10 @@
             // 
             // guna2ProgressBar1
             // 
-            guna2ProgressBar1.CustomizableEdges = customizableEdges14;
+            guna2ProgressBar1.CustomizableEdges = customizableEdges4;
             guna2ProgressBar1.Location = new Point(52, 159);
             guna2ProgressBar1.Name = "guna2ProgressBar1";
-            guna2ProgressBar1.ShadowDecoration.CustomizableEdges = customizableEdges15;
+            guna2ProgressBar1.ShadowDecoration.CustomizableEdges = customizableEdges5;
             guna2ProgressBar1.Size = new Size(300, 30);
             guna2ProgressBar1.TabIndex = 7;
             guna2ProgressBar1.Text = "guna2ProgressBar1";
@@ -185,11 +205,11 @@
             // 
             // guna2Shapes1
             // 
-            guna2Shapes1.Location = new Point(167, 142);
+            guna2Shapes1.Location = new Point(136, 166);
             guna2Shapes1.Name = "guna2Shapes1";
             guna2Shapes1.PolygonSkip = 1;
             guna2Shapes1.Rotate = 0F;
-            guna2Shapes1.RoundedEdges = customizableEdges13;
+            guna2Shapes1.RoundedEdges = customizableEdges3;
             guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
             guna2Shapes1.Size = new Size(200, 200);
             guna2Shapes1.TabIndex = 9;
@@ -206,9 +226,9 @@
             // 
             // guna2WinProgressIndicator1
             // 
-            guna2WinProgressIndicator1.Location = new Point(221, 133);
+            guna2WinProgressIndicator1.Location = new Point(72, 240);
             guna2WinProgressIndicator1.Name = "guna2WinProgressIndicator1";
-            guna2WinProgressIndicator1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2WinProgressIndicator1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2WinProgressIndicator1.Size = new Size(104, 117);
             guna2WinProgressIndicator1.TabIndex = 11;
             // 
@@ -221,11 +241,34 @@
             guna2MessageDialog1.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark;
             guna2MessageDialog1.Text = null;
             // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "facebook.png");
+            imageList1.Images.SetKeyName(1, "instagram.png");
+            // 
+            // guna2ImageButton1
+            // 
+            guna2ImageButton1.CheckedState.ImageSize = new Size(64, 64);
+            guna2ImageButton1.HoverState.ImageSize = new Size(64, 64);
+            guna2ImageButton1.Image = (Image)resources.GetObject("guna2ImageButton1.Image");
+            guna2ImageButton1.ImageOffset = new Point(0, 0);
+            guna2ImageButton1.ImageRotate = 0F;
+            guna2ImageButton1.Location = new Point(287, 49);
+            guna2ImageButton1.Name = "guna2ImageButton1";
+            guna2ImageButton1.PressedState.ImageSize = new Size(64, 64);
+            guna2ImageButton1.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            guna2ImageButton1.Size = new Size(80, 78);
+            guna2ImageButton1.TabIndex = 12;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(guna2ImageButton1);
             Controls.Add(guna2WinProgressIndicator1);
             Controls.Add(guna2TrackBar1);
             Controls.Add(guna2Shapes1);
@@ -249,9 +292,6 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
@@ -265,5 +305,12 @@
         private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
         private Guna.UI2.WinForms.Guna2WinProgressIndicator guna2WinProgressIndicator1;
         private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewComboBoxColumn Column5;
+        private DataGridViewButtonColumn Column4;
+        private ImageList imageList1;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
     }
 }

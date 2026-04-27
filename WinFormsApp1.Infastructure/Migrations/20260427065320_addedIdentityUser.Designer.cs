@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WinFormsApp1.Infastructure.Data;
 
@@ -11,9 +12,11 @@ using WinFormsApp1.Infastructure.Data;
 namespace WinFormsApp1.Infastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260427065320_addedIdentityUser")]
+    partial class addedIdentityUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -174,9 +177,6 @@ namespace WinFormsApp1.Infastructure.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<string>("FullName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
@@ -221,23 +221,6 @@ namespace WinFormsApp1.Infastructure.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "aaf49b6b-7976-417c-8d6f-a21df27065fa",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "2ab2439d-cf98-4c0e-98bb-64f0f3099ca9",
-                            Email = "admin@example.com",
-                            EmailConfirmed = false,
-                            LockoutEnabled = false,
-                            NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFIwrw5g5CYmm1+mPWMQicdyPllfvSHS+kIspG+y8hzNcxHFtrSEpD4NV4dN/X3QEg==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "a3ee3653-3b53-412b-bd2e-cbc19fec2329",
-                            TwoFactorEnabled = false,
-                            UserName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("WinFormsApp1.Domain.Models.Blog", b =>
