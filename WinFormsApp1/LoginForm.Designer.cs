@@ -37,6 +37,7 @@
             txtBoxUserName = new Guna.UI2.WinForms.Guna2TextBox();
             txtBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             SuspendLayout();
             // 
             // txtBoxUserName
@@ -95,17 +96,29 @@
             btnLogin.Text = "Login";
             btnLogin.Click += btnLogin_Click;
             // 
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 16F);
+            guna2HtmlLabel1.Location = new Point(306, 64);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(186, 32);
+            guna2HtmlLabel1.TabIndex = 3;
+            guna2HtmlLabel1.Text = "Login Your Account";
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(guna2HtmlLabel1);
             Controls.Add(btnLogin);
             Controls.Add(txtBoxPassword);
             Controls.Add(txtBoxUserName);
             Name = "LoginForm";
             Text = "LoginForm";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -113,5 +126,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtBoxUserName;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPassword;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
