@@ -113,9 +113,9 @@
             guna2HtmlLabel2.Font = new Font("Segoe UI", 11F);
             guna2HtmlLabel2.Location = new Point(306, 40);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(70, 22);
+            guna2HtmlLabel2.Size = new Size(135, 22);
             guna2HtmlLabel2.TabIndex = 4;
-            guna2HtmlLabel2.Text = "Welcome!";
+            guna2HtmlLabel2.Text = "Welcome to Davao!";
             // 
             // LoginForm
             // 
