@@ -608,7 +608,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>eE5wlepcaU192aAm53rvW0X+Kxnt9M8jF3LbYTzgeNc=</dsig:DigestValue>
+      <dsig:DigestValue>ktsMYCo51TCRiOeaB4sZ6wIOMiDHjqF94FHz5bN5ueM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="WinFormsApp1.Domain.dll" size="6656">
@@ -626,7 +626,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>jxBmnrjhWy9OPYRAa9wTKSXBpRCVlhvkyfbS+p9Tnwk=</dsig:DigestValue>
+      <dsig:DigestValue>Y/fdVWTB/gMnwJf5qbpNInV/aI3S+/bq8Vl/SmcMyys=</dsig:DigestValue>
     </hash>
   </file>
   <file name="WinFormsApp1.Infastructure.dll" size="62976">

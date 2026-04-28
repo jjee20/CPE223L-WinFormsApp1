@@ -602,13 +602,13 @@
       <dsig:DigestValue>WA5SqTGU9CCVFY5Ut/DWG1McjuBdYYeGAG575pz8Zek=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WinFormsApp1.dll" size="27648">
+  <file name="WinFormsApp1.dll" size="28160">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>eLbLvDzkHlWeLJoFGaiFKEy3YoCNGj0phw1G86+jMpo=</dsig:DigestValue>
+      <dsig:DigestValue>lUkgr8w5Dc14nxRGNFLrH9vOKfGx1IuDGyqjDkbmXN8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="WinFormsApp1.Domain.dll" size="6656">
@@ -620,13 +620,13 @@
       <dsig:DigestValue>tvXs90jzGbhHYhAfvFvuxvvIIXY1bkJ5wPI+YWNqKL0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WinFormsApp1.exe" size="161792">
+  <file name="WinFormsApp1.exe" size="162304">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Nm1qaTbwtcAIS3vsdo1wdv8P13bow/LqFZrieAnsI24=</dsig:DigestValue>
+      <dsig:DigestValue>/1OBvPx6gTk6LRkvKiocGSU0OfjqZj4WEWWVEZHFHyg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="WinFormsApp1.Infastructure.dll" size="62976">
