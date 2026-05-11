@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WinFormsApp1.Infastructure\WinFormsApp1.Infastructure.csproj" />
+  </ItemGroup>
+
 </Project>

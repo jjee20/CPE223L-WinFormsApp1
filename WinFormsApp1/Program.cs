@@ -1,3 +1,6 @@
+using WinFormsApp1.Presenter;
+using WinFormsApp1.Views.IViews;
+
 namespace WinFormsApp1
 {
     internal static class Program
@@ -10,8 +13,13 @@ namespace WinFormsApp1
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+
             ApplicationConfiguration.Initialize();
-            Application.Run(new LoginForm());
+
+            IBlogView logView = new BlogView();
+            var presenter = new BlogPresenter(logView);
+
+            Application.Run((Form)logView);
         }
     }
 }

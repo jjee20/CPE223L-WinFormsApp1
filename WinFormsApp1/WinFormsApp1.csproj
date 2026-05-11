@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WinFormsApp1.Infastructure\WinFormsApp1.Infastructure.csproj" />
+    <ProjectReference Include="..\WinFormsApp1.Services\WinFormsApp1.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

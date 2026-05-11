@@ -34,7 +34,7 @@ namespace WinFormsApp1
                     MessageBox.Show("Login successful!");
                     // Proceed to the next form or main application window
                     Hide();
-                    var mainForm = new Form1();
+                    var mainForm = new BlogView();
                     mainForm.ShowDialog();
                     Close();
                 }
